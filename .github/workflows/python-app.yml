@@ -31,4 +31,4 @@ jobs:
         git config --local user.name "1622663850"
         git add output.txt
         git commit -m "Update output.txt from GitHub Actions"
-        git push origin master
+        git push origin main
