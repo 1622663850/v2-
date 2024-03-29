@@ -25,8 +25,10 @@ jobs:
     - name: Execute Python script and write output to file
       run: python main.py > output.txt  # 运行你的 Python 脚本并将输出写入到文件
 
-    - name: Upload output
-      uses: actions/upload-artifact@v2
-      with:
-        name: output
-        path: output.txt
+    - name: Commit and push
+      run: |
+        git config --local user.email "663809323@qq.com"
+        git config --local user.name "1622663850"
+        git add output.txt
+        git commit -m "Update output.txt from GitHub Actions"
+        git push
