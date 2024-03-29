@@ -32,3 +32,5 @@ jobs:
         git add output.txt
         git commit -m "Update output.txt from GitHub Actions"
         git push
+      env:
+        GITHUB_TOKEN: ${{ secrets.V2_GENGXIN }}
