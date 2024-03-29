@@ -71,7 +71,7 @@ if __name__ == '__main__':
                 encoded_content = base64.b64encode(json_bytes)
                 base64_str = encoded_content.decode('utf-8')
                 new_vmess.append("vmess://"+base64_str)
-                new_vmess.append(f"vless://a65f9108-df2d-4cd7-ae0a-e3eb6407e353@{ip_['ip']}:80?encryption=none&security=none&sni=v2rat.xqzy.workers.dev&fp=randomized&type=ws&host=v2rat.xqzy.workers.dev&path=%2F%3Fed%3D2048#v2rat.xqzy.workers.dev-移动{str(jishu)}")
+                new_vmess.append(f"vless://a65f9108-df2d-4cd7-ae0a-e3eb6407e353@{ip_['ip']}:80?encryption=none&security=none&sni=v2rat.xqzy.workers.dev&fp=randomized&type=ws&host=v2rat.xqzy.workers.dev&path=%2F%3Fed%3D2048#v2rat.xqzy.workers.dev-CM{str(jishu)}")
                 # print(ip_["ip"] + '转换链接成功')
 
             jishu = 0
@@ -89,7 +89,7 @@ if __name__ == '__main__':
                 base64_str = encoded_content.decode('utf-8')
                 new_vmess.append("vmess://" + base64_str)
                 new_vmess.append(
-                    f"vless://a65f9108-df2d-4cd7-ae0a-e3eb6407e353@{ip_['ip']}:80?encryption=none&security=none&sni=v2rat.xqzy.workers.dev&fp=randomized&type=ws&host=v2rat.xqzy.workers.dev&path=%2F%3Fed%3D2048#v2rat.xqzy.workers.dev-联通{str(jishu)}")
+                    f"vless://a65f9108-df2d-4cd7-ae0a-e3eb6407e353@{ip_['ip']}:80?encryption=none&security=none&sni=v2rat.xqzy.workers.dev&fp=randomized&type=ws&host=v2rat.xqzy.workers.dev&path=%2F%3Fed%3D2048#v2rat.xqzy.workers.dev-CU{str(jishu)}")
                 # print(ip_["ip"] + '转换链接成功')
 
             jishu = 0
@@ -107,7 +107,7 @@ if __name__ == '__main__':
                 base64_str = encoded_content.decode('utf-8')
                 new_vmess.append("vmess://" + base64_str)
                 new_vmess.append(
-                    f"vless://a65f9108-df2d-4cd7-ae0a-e3eb6407e353@{ip_['ip']}:80?encryption=none&security=none&sni=v2rat.xqzy.workers.dev&fp=randomized&type=ws&host=v2rat.xqzy.workers.dev&path=%2F%3Fed%3D2048#v2rat.xqzy.workers.dev-电信{str(jishu)}")
+                    f"vless://a65f9108-df2d-4cd7-ae0a-e3eb6407e353@{ip_['ip']}:80?encryption=none&security=none&sni=v2rat.xqzy.workers.dev&fp=randomized&type=ws&host=v2rat.xqzy.workers.dev&path=%2F%3Fed%3D2048#v2rat.xqzy.workers.dev-CT{str(jishu)}")
                 # print(ip_["ip"] +'转换链接成功')
 
             # min_delay_ip = min(data['info']['CM'] + data['info']['CU'] + data['info']['CT'], key=lambda x: x['delay'])
