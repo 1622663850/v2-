@@ -61,7 +61,7 @@ if __name__ == '__main__':
                 encoded_content = base64.b64encode(json_bytes)
                 base64_str = encoded_content.decode('utf-8')
                 new_vmess.append("vmess://"+base64_str)
-                print(ip_["ip"] + '转换链接成功')
+                # print(ip_["ip"] + '转换链接成功')
 
             jishu = 0
             ip = data['info']['CU']
@@ -77,7 +77,7 @@ if __name__ == '__main__':
                 encoded_content = base64.b64encode(json_bytes)
                 base64_str = encoded_content.decode('utf-8')
                 new_vmess.append("vmess://" + base64_str)
-                print(ip_["ip"] + '转换链接成功')
+                # print(ip_["ip"] + '转换链接成功')
 
             jishu = 0
             ip = data['info']['CT']
@@ -103,11 +103,11 @@ if __name__ == '__main__':
     else:
         print('获取 IP 地址失败:', response.status_code)
 
-    # 打开一个文件以写入数据
-    with open(input_file, "w") as f:
-        for item in new_vmess:
-            # 写入数据，并在每个元素后添加一个换行符
-            f.write("%s\n" % item)
-    output_file = 'output.txt'
-    encode_file(input_file, output_file)
-    print("写入到txt中成功")
+    # # 打开一个文件以写入数据
+    # with open(input_file, "w") as f:
+    #     for item in new_vmess:
+    #         # 写入数据，并在每个元素后添加一个换行符
+    #         f.write("%s\n" % item)
+    # output_file = 'output.txt'
+    # encode_file(input_file, output_file)
+    # print("写入到txt中成功")
