@@ -41,12 +41,22 @@ if __name__ == '__main__':
     # 发送请求获取 IP 地址
     response = requests.get('https://monitor.gacjie.cn/api/client/get_ip_address?cdn_server=1')#CDN运营商CloudFlare=1 CloudFront=2 Gcore=3
     new_vmess = []
+
+    vmess_1 = vmess
+    vmess_1['ps'] = 'v.ps-CF优选IP-原地址'
+    vmess_1['add'] = 'vs2.xqzy.cloudns.org'  # 地址
+    json_str = json.dumps(vmess_1, ensure_ascii=False)
+    json_bytes = json_str.encode('utf-8')
+    encoded_content = base64.b64encode(json_bytes)
+    base64_str = encoded_content.decode('utf-8')
+    new_vmess.append("vmess://" + base64_str)
+    new_vmess.append("vless://a65f9108-df2d-4cd7-ae0a-e3eb6407e353@172.67.74.99:80?encryption=none&security=none&sni=v2rat.xqzy.workers.dev&fp=randomized&type=ws&host=v2rat.xqzy.workers.dev&path=%2F%3Fed%3D2048#v2rat.xqzy.workers.dev")
+
     if response.status_code == 200:
         data = response.json()
         # print(data)
         if data['status']:
             # 从返回的数据中选择 delay 最小的 IP 地址
-
             ip = data['info']['CM']
             jishu = 0
             for ip_ in ip:
@@ -61,6 +71,7 @@ if __name__ == '__main__':
                 encoded_content = base64.b64encode(json_bytes)
                 base64_str = encoded_content.decode('utf-8')
                 new_vmess.append("vmess://"+base64_str)
+                new_vmess.append(f"vless://a65f9108-df2d-4cd7-ae0a-e3eb6407e353@{ip_['ip']}:80?encryption=none&security=none&sni=v2rat.xqzy.workers.dev&fp=randomized&type=ws&host=v2rat.xqzy.workers.dev&path=%2F%3Fed%3D2048#v2rat.xqzy.workers.dev-移动{str(jishu)}")
                 # print(ip_["ip"] + '转换链接成功')
 
             jishu = 0
@@ -77,6 +88,8 @@ if __name__ == '__main__':
                 encoded_content = base64.b64encode(json_bytes)
                 base64_str = encoded_content.decode('utf-8')
                 new_vmess.append("vmess://" + base64_str)
+                new_vmess.append(
+                    f"vless://a65f9108-df2d-4cd7-ae0a-e3eb6407e353@{ip_['ip']}:80?encryption=none&security=none&sni=v2rat.xqzy.workers.dev&fp=randomized&type=ws&host=v2rat.xqzy.workers.dev&path=%2F%3Fed%3D2048#v2rat.xqzy.workers.dev-联通{str(jishu)}")
                 # print(ip_["ip"] + '转换链接成功')
 
             jishu = 0
@@ -93,6 +106,8 @@ if __name__ == '__main__':
                 encoded_content = base64.b64encode(json_bytes)
                 base64_str = encoded_content.decode('utf-8')
                 new_vmess.append("vmess://" + base64_str)
+                new_vmess.append(
+                    f"vless://a65f9108-df2d-4cd7-ae0a-e3eb6407e353@{ip_['ip']}:80?encryption=none&security=none&sni=v2rat.xqzy.workers.dev&fp=randomized&type=ws&host=v2rat.xqzy.workers.dev&path=%2F%3Fed%3D2048#v2rat.xqzy.workers.dev-电信{str(jishu)}")
                 # print(ip_["ip"] +'转换链接成功')
 
             # min_delay_ip = min(data['info']['CM'] + data['info']['CU'] + data['info']['CT'], key=lambda x: x['delay'])
