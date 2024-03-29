@@ -1,0 +1,25 @@
+name: Update Script
+
+on:
+  # push
+  schedule:
+    - cron: '*/15 * * * *'  # 每 15 分钟执行一次
+
+jobs:
+  update:
+    runs-on: ubuntu-latest
+    
+    steps:
+    - name: Checkout repository
+      uses: actions/checkout@v4
+      
+    - name: Set up Python
+      uses: actions/setup-python@v4
+      with:
+        python-version: '3.10'  # 指定 Python 版本
+    
+    - name: Install dependencies
+      run: pip install -r requirements.txt  # 如果有依赖，需安装
+      
+    - name: Execute Python script
+      run: python main.py  # 运行你的 Python 脚本 
