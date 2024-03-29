@@ -22,5 +22,11 @@ jobs:
     - name: Install dependencies
       run: pip install -r requirements.txt  # 如果有依赖，需安装
       
-    - name: Execute Python script
-      run: python main.py  # 运行你的 Python 脚本 
+    - name: Execute Python script and write output to file
+      run: python main.py > output.txt  # 运行你的 Python 脚本并将输出写入到文件
+
+    - name: Upload output
+      uses: actions/upload-artifact@v2
+      with:
+        name: output
+        path: output.txt
