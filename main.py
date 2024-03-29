@@ -111,20 +111,3 @@ if __name__ == '__main__':
     output_file = 'output.txt'
     encode_file(input_file, output_file)
     print("写入到txt中成功")
-    headers = {
-        'Host': '192.168.1.150:62322',
-        'Connection': 'keep-alive',
-        'Content-Length': '40',
-        'Accept': 'application/json, text/plain, */*',
-        'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/122.0.0.0 Safari/537.36 Edg/122.0.0.0',
-        'Content-Type': 'application/json',
-        'Authorization': 'Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmcmVzaCI6ZmFsc2UsImlhdCI6MTcxMTYyNjM1NywianRpIjoiMDNmOTFmNDktZGZmMy00MzU0LWJiMmQtNTFmNDc5YmI4NTQyIiwidHlwZSI6ImFjY2VzcyIsInN1YiI6ImFkbWluIiwibmJmIjoxNzExNjI2MzU3LCJjc3JmIjoiNDZjZWQzOTEtMjQzYS00ZTZhLWJjZWMtMDNmODRhYTM1MjI2IiwiZXhwIjoxNzExNjI4MTU3fQ.2Uyl8CYQNxIsZlQZRO4avkztzVH4w2VQOY5oCVfo1sQ',
-        'Accept-Language':'zh-CN,zh;q=0.9,en;q=0.8,en-GB;q=0.7,en-US;q=0.6',
-        'Cookie':'_SSID=izMUtBPCQB3flRBQQC7L9lFSV23HPvsZwWIu5cjDly8; stay_login=1; did=8c_PxVZ6U26RULoKGiwunQqVefOW3JjN0YzoUNu8DTjVGM7bLIk0xncClWVG55wQzqqW0RXZ2QlsB1aogJNoJA; _CrPoSt=cHJvdG9jb2w9aHR0cDo7IHBvcnQ9NTAwMDsgcGF0aG5hbWU9Lzs%3D; id=8_Nrr_wbgzE4tBKSmKVXsP3IgdS8sNWM5UyYcJ8kia0UYtOnO_eJW854tOEmFe7xvg5a4KKHql8zHkLIJhjql8; session=.eJw9zrsOwjAMheF3ycwQx87FfRkUx7ZgoEJpOyHencLAdIZfR_pe4erTtltY9nnYJVzvGpYgAODsuSoKpRK1dEVUd4hSqqAX0JQTeR4Fk9Q8GkYazCxYsDMYtM6tnUORGLx5lQEimcnHaEr1rCTcUxnVshH2Zul76ApM4YQ8bT76auv-px2bzZ8vvj_CbzUe.Zf2KVA.5ALljO4gy2ltaWylj3rs_kX4bvc; SID=n3wWEAwI7+qx1D/plA2lvtGxC9YGtK/q; io=DYfsm_KhCPgmuoUBAAAi'
-    }
-
-
-    data = {"name":"123","node":"","newNode":new_vmess}
-
-    req = requests.post(url='http://192.168.1.150:62322/create_sub', headers=headers)
-    print(req.status_code)
