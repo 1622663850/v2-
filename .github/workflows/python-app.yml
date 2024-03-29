@@ -4,6 +4,7 @@ on:
   # push
   schedule:
     - cron: '*/15 * * * *'  # 每 15 分钟执行一次
+  workflow_dispatch: # Put here!!
 
 jobs:
   update:
