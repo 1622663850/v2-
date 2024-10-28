@@ -72,7 +72,7 @@ if __name__ == '__main__':
                 # base64_str = encoded_content.decode('utf-8')
                 # new_vmess.append("vmess://"+base64_str)
                 new_vmess.append(f"vless://a65f9108-df2d-4cd7-ae0a-e3eb6407e353@{ip_['ip']}:80?encryption=none&security=none&sni=v2rat.xqzy.workers.dev&fp=randomized&type=ws&host=v2rat.xqzy.workers.dev&path=%2F%3Fed%3D2048#v2rat.xqzy.workers.dev-CM{str(jishu)}")
-                print(ip_["ip"] + '转换链接成功')
+                # print(ip_["ip"] + '转换链接成功')
 
             jishu = 0
             ip = data['info']['CU']
@@ -90,7 +90,7 @@ if __name__ == '__main__':
                 # new_vmess.append("vmess://" + base64_str)
                 new_vmess.append(
                     f"vless://a65f9108-df2d-4cd7-ae0a-e3eb6407e353@{ip_['ip']}:80?encryption=none&security=none&sni=v2rat.xqzy.workers.dev&fp=randomized&type=ws&host=v2rat.xqzy.workers.dev&path=%2F%3Fed%3D2048#v2rat.xqzy.workers.dev-CU{str(jishu)}")
-                print(ip_["ip"] + '转换链接成功')
+                # print(ip_["ip"] + '转换链接成功')
 
             jishu = 0
             ip = data['info']['CT']
@@ -108,7 +108,7 @@ if __name__ == '__main__':
                 # new_vmess.append("vmess://" + base64_str)
                 new_vmess.append(
                     f"vless://a65f9108-df2d-4cd7-ae0a-e3eb6407e353@{ip_['ip']}:80?encryption=none&security=none&sni=v2rat.xqzy.workers.dev&fp=randomized&type=ws&host=v2rat.xqzy.workers.dev&path=%2F%3Fed%3D2048#v2rat.xqzy.workers.dev-CT{str(jishu)}")
-                print(ip_["ip"] +'转换链接成功')
+                # print(ip_["ip"] +'转换链接成功')
 
             # min_delay_ip = min(data['info']['CM'] + data['info']['CU'] + data['info']['CT'], key=lambda x: x['delay'])
             # NEW_IP = min_delay_ip['ip']
@@ -125,5 +125,5 @@ if __name__ == '__main__':
             f.write("%s\n" % item)
     output_file = 'output.txt'
     encode_file(input_file, output_file)
-    print("写入到txt中成功")
+    # print("写入到txt中成功")
 
