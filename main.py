@@ -6,6 +6,11 @@
 import base64
 import requests
 import json
+import yaml
+
+class NoAliasDumper(yaml.Dumper):
+    def ignore_aliases(self, data):
+        return True
 
 def encode_file(input_file, output_file):
     with open(input_file, 'rb') as file:
@@ -42,6 +47,33 @@ if __name__ == '__main__':
     response = requests.get('https://www.wetest.vip/api/cf2dns/get_cloudflare_ip')#CDN运营商CloudFlare=1 CloudFront=2 Gcore=3
     new_vmess = []
 
+    vless = {
+        'name': 'v2rat.xqzy.workers.dev',
+        'type': 'vless',
+        'uuid': 'a65f9108-df2d-4cd7-ae0a-e3eb6407e353',
+        'server': '172.67.74.99',
+        'port': 80,
+        'network': 'ws',
+        'udp': True,
+        'skip-cert-verify': True,
+        'tfo': False,
+        'tls': False,
+        "ws-opts":{
+            "path": "/?ed=2048",
+            'headers':{
+                'Host': 'v2rat.xqzy.workers.dev'
+            }
+        }
+    }
+
+    # 初始化 Clash 配置
+    clash_config = {
+            'proxies':[],
+            'proxy-groups': []
+        }
+    proxy_name_list = []
+
+
     # vmess_1 = vmess
     # vmess_1['ps'] = 'v.ps-CF优选IP-原地址'
     # vmess_1['add'] = 'vs2.xqzy.cloudns.org'  # 地址
@@ -72,6 +104,11 @@ if __name__ == '__main__':
                 # base64_str = encoded_content.decode('utf-8')
                 # new_vmess.append("vmess://"+base64_str)
                 new_vmess.append(f"vless://a65f9108-df2d-4cd7-ae0a-e3eb6407e353@{ip_['ip']}:80?encryption=none&security=none&sni=v2rat.xqzy.workers.dev&fp=randomized&type=ws&host=v2rat.xqzy.workers.dev&path=%2F%3Fed%3D2048#v2rat.xqzy.workers.dev-CM{str(jishu)}")
+
+                vless['name'] = f'v2rat.xqzy.workers.dev-CM{str(jishu)}' # 名称
+                vless['server'] = ip_['ip']
+                clash_config['proxies'].append(vless.copy())
+                proxy_name_list.append(vless['name'])
                 print(ip_["ip"] + '转换链接成功')
 
             jishu = 0
@@ -90,6 +127,11 @@ if __name__ == '__main__':
                 # new_vmess.append("vmess://" + base64_str)
                 new_vmess.append(
                     f"vless://a65f9108-df2d-4cd7-ae0a-e3eb6407e353@{ip_['ip']}:80?encryption=none&security=none&sni=v2rat.xqzy.workers.dev&fp=randomized&type=ws&host=v2rat.xqzy.workers.dev&path=%2F%3Fed%3D2048#v2rat.xqzy.workers.dev-CU{str(jishu)}")
+                vless['name'] = f'v2rat.xqzy.workers.dev-CU{str(jishu)}' # 名称
+                vless['server'] = ip_['ip']
+                clash_config['proxies'].append(vless.copy())
+                proxy_name_list.append(vless['name'])
+
                 print(ip_["ip"] + '转换链接成功')
 
             jishu = 0
@@ -108,6 +150,12 @@ if __name__ == '__main__':
                 # new_vmess.append("vmess://" + base64_str)
                 new_vmess.append(
                     f"vless://a65f9108-df2d-4cd7-ae0a-e3eb6407e353@{ip_['ip']}:80?encryption=none&security=none&sni=v2rat.xqzy.workers.dev&fp=randomized&type=ws&host=v2rat.xqzy.workers.dev&path=%2F%3Fed%3D2048#v2rat.xqzy.workers.dev-CT{str(jishu)}")
+
+
+                vless['name'] = f'v2rat.xqzy.workers.dev-CT{str(jishu)}' # 名称
+                vless['server'] = ip_['ip']
+                clash_config['proxies'].append(vless.copy())
+                proxy_name_list.append(vless['name'])
                 print(ip_["ip"] +'转换链接成功')
 
             # min_delay_ip = min(data['info']['CM'] + data['info']['CU'] + data['info']['CT'], key=lambda x: x['delay'])
@@ -123,6 +171,29 @@ if __name__ == '__main__':
         for item in new_vmess:
             # 写入数据，并在每个元素后添加一个换行符
             f.write("%s\n" % item)
+
+    # for item11 in clash_config['proxies']:
+    #     print(item11)
+
+
+    # 将 Clash 配置转为 YAML 格式
+    with open('clash.yaml', encoding="utf-8") as file:
+        data = yaml.safe_load(file)
+        data['proxies'] = clash_config['proxies']
+        proxy_groups = data.get('proxy-groups')
+        for proxy_group in proxy_groups:
+            for proxies in proxy_group['proxies']:
+                if proxies == 'auto':  # 判断是否包含auto字符串
+                    proxy_group['proxies'].remove('auto')
+                    for name_list in proxy_name_list:
+                        proxy_group['proxies'].append(name_list)
+
+            # print(proxy_group['proxies'])
+        # print(data)
+        clash_config_yaml = yaml.dump(data, sort_keys=False, allow_unicode=True, Dumper=NoAliasDumper)
+        # print(clash_config_yaml)
+        with open('clash2.yaml', 'w', encoding='utf-8') as file:
+            file.write(clash_config_yaml)
     output_file = 'output.txt'
     encode_file(input_file, output_file)
     print("写入到txt中成功")
