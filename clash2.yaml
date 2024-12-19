@@ -8,21 +8,7 @@ proxies:
 - name: v2rat.xqzy.workers.dev-CM1
   type: vless
   uuid: a65f9108-df2d-4cd7-ae0a-e3eb6407e353
-  server: 104.16.59.208
-  port: 80
-  network: ws
-  udp: true
-  skip-cert-verify: true
-  tfo: false
-  tls: false
-  ws-opts:
-    path: /?ed=2048
-    headers:
-      Host: v2rat.xqzy.workers.dev
-- name: v2rat.xqzy.workers.dev-CM2
-  type: vless
-  uuid: a65f9108-df2d-4cd7-ae0a-e3eb6407e353
-  server: 104.17.170.51
+  server: 104.17.206.200
   port: 80
   network: ws
   udp: true
@@ -36,7 +22,7 @@ proxies:
 - name: v2rat.xqzy.workers.dev-CU1
   type: vless
   uuid: a65f9108-df2d-4cd7-ae0a-e3eb6407e353
-  server: 104.26.9.126
+  server: 172.67.70.126
   port: 80
   network: ws
   udp: true
@@ -50,7 +36,7 @@ proxies:
 - name: v2rat.xqzy.workers.dev-CU2
   type: vless
   uuid: a65f9108-df2d-4cd7-ae0a-e3eb6407e353
-  server: 104.20.22.122
+  server: 162.159.141.47
   port: 80
   network: ws
   udp: true
@@ -64,7 +50,7 @@ proxies:
 - name: v2rat.xqzy.workers.dev-CU3
   type: vless
   uuid: a65f9108-df2d-4cd7-ae0a-e3eb6407e353
-  server: 172.67.79.102
+  server: 172.67.69.166
   port: 80
   network: ws
   udp: true
@@ -78,7 +64,7 @@ proxies:
 - name: v2rat.xqzy.workers.dev-CU4
   type: vless
   uuid: a65f9108-df2d-4cd7-ae0a-e3eb6407e353
-  server: 162.159.152.127
+  server: 104.26.8.28
   port: 80
   network: ws
   udp: true
@@ -92,7 +78,7 @@ proxies:
 - name: v2rat.xqzy.workers.dev-CU5
   type: vless
   uuid: a65f9108-df2d-4cd7-ae0a-e3eb6407e353
-  server: 162.159.134.241
+  server: 162.159.137.218
   port: 80
   network: ws
   udp: true
@@ -106,7 +92,7 @@ proxies:
 - name: v2rat.xqzy.workers.dev-CT1
   type: vless
   uuid: a65f9108-df2d-4cd7-ae0a-e3eb6407e353
-  server: 104.19.116.242
+  server: 172.64.87.31
   port: 80
   network: ws
   udp: true
@@ -120,7 +106,7 @@ proxies:
 - name: v2rat.xqzy.workers.dev-CT2
   type: vless
   uuid: a65f9108-df2d-4cd7-ae0a-e3eb6407e353
-  server: 104.17.146.183
+  server: 104.18.166.108
   port: 80
   network: ws
   udp: true
@@ -134,7 +120,7 @@ proxies:
 - name: v2rat.xqzy.workers.dev-CT3
   type: vless
   uuid: a65f9108-df2d-4cd7-ae0a-e3eb6407e353
-  server: 104.19.120.154
+  server: 104.17.175.251
   port: 80
   network: ws
   udp: true
@@ -148,7 +134,7 @@ proxies:
 - name: v2rat.xqzy.workers.dev-CT4
   type: vless
   uuid: a65f9108-df2d-4cd7-ae0a-e3eb6407e353
-  server: 104.19.26.245
+  server: 104.19.110.180
   port: 80
   network: ws
   udp: true
@@ -162,7 +148,7 @@ proxies:
 - name: v2rat.xqzy.workers.dev-CT5
   type: vless
   uuid: a65f9108-df2d-4cd7-ae0a-e3eb6407e353
-  server: 104.19.122.242
+  server: 104.17.151.154
   port: 80
   network: ws
   udp: true
@@ -180,7 +166,6 @@ proxy-groups:
   - ♻️ 自动选择
   - DIRECT
   - v2rat.xqzy.workers.dev-CM1
-  - v2rat.xqzy.workers.dev-CM2
   - v2rat.xqzy.workers.dev-CU1
   - v2rat.xqzy.workers.dev-CU2
   - v2rat.xqzy.workers.dev-CU3
@@ -198,7 +183,6 @@ proxy-groups:
   tolerance: 50
   proxies:
   - v2rat.xqzy.workers.dev-CM1
-  - v2rat.xqzy.workers.dev-CM2
   - v2rat.xqzy.workers.dev-CU1
   - v2rat.xqzy.workers.dev-CU2
   - v2rat.xqzy.workers.dev-CU3
@@ -216,7 +200,6 @@ proxy-groups:
   - ♻️ 自动选择
   - 🎯 全球直连
   - v2rat.xqzy.workers.dev-CM1
-  - v2rat.xqzy.workers.dev-CM2
   - v2rat.xqzy.workers.dev-CU1
   - v2rat.xqzy.workers.dev-CU2
   - v2rat.xqzy.workers.dev-CU3
@@ -233,7 +216,6 @@ proxy-groups:
   - 🚀 节点选择
   - 🎯 全球直连
   - v2rat.xqzy.workers.dev-CM1
-  - v2rat.xqzy.workers.dev-CM2
   - v2rat.xqzy.workers.dev-CU1
   - v2rat.xqzy.workers.dev-CU2
   - v2rat.xqzy.workers.dev-CU3
@@ -250,7 +232,6 @@ proxy-groups:
   - 🎯 全球直连
   - 🚀 节点选择
   - v2rat.xqzy.workers.dev-CM1
-  - v2rat.xqzy.workers.dev-CM2
   - v2rat.xqzy.workers.dev-CU1
   - v2rat.xqzy.workers.dev-CU2
   - v2rat.xqzy.workers.dev-CU3
@@ -267,7 +248,6 @@ proxy-groups:
   - 🚀 节点选择
   - 🎯 全球直连
   - v2rat.xqzy.workers.dev-CM1
-  - v2rat.xqzy.workers.dev-CM2
   - v2rat.xqzy.workers.dev-CU1
   - v2rat.xqzy.workers.dev-CU2
   - v2rat.xqzy.workers.dev-CU3
@@ -285,7 +265,6 @@ proxy-groups:
   - 🎯 全球直连
   - ♻️ 自动选择
   - v2rat.xqzy.workers.dev-CM1
-  - v2rat.xqzy.workers.dev-CM2
   - v2rat.xqzy.workers.dev-CU1
   - v2rat.xqzy.workers.dev-CU2
   - v2rat.xqzy.workers.dev-CU3
@@ -319,7 +298,6 @@ proxy-groups:
   - 🎯 全球直连
   - ♻️ 自动选择
   - v2rat.xqzy.workers.dev-CM1
-  - v2rat.xqzy.workers.dev-CM2
   - v2rat.xqzy.workers.dev-CU1
   - v2rat.xqzy.workers.dev-CU2
   - v2rat.xqzy.workers.dev-CU3
