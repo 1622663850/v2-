@@ -8,7 +8,63 @@ proxies:
 - name: v2rat.xqzy.workers.dev-CM1
   type: vless
   uuid: a65f9108-df2d-4cd7-ae0a-e3eb6407e353
-  server: 104.17.206.200
+  server: 104.17.115.187
+  port: 80
+  network: ws
+  udp: true
+  skip-cert-verify: true
+  tfo: false
+  tls: false
+  ws-opts:
+    path: /?ed=2048
+    headers:
+      Host: v2rat.xqzy.workers.dev
+- name: v2rat.xqzy.workers.dev-CM2
+  type: vless
+  uuid: a65f9108-df2d-4cd7-ae0a-e3eb6407e353
+  server: 104.17.187.61
+  port: 80
+  network: ws
+  udp: true
+  skip-cert-verify: true
+  tfo: false
+  tls: false
+  ws-opts:
+    path: /?ed=2048
+    headers:
+      Host: v2rat.xqzy.workers.dev
+- name: v2rat.xqzy.workers.dev-CM3
+  type: vless
+  uuid: a65f9108-df2d-4cd7-ae0a-e3eb6407e353
+  server: 104.16.149.172
+  port: 80
+  network: ws
+  udp: true
+  skip-cert-verify: true
+  tfo: false
+  tls: false
+  ws-opts:
+    path: /?ed=2048
+    headers:
+      Host: v2rat.xqzy.workers.dev
+- name: v2rat.xqzy.workers.dev-CM4
+  type: vless
+  uuid: a65f9108-df2d-4cd7-ae0a-e3eb6407e353
+  server: 104.19.159.194
+  port: 80
+  network: ws
+  udp: true
+  skip-cert-verify: true
+  tfo: false
+  tls: false
+  ws-opts:
+    path: /?ed=2048
+    headers:
+      Host: v2rat.xqzy.workers.dev
+- name: v2rat.xqzy.workers.dev-CM5
+  type: vless
+  uuid: a65f9108-df2d-4cd7-ae0a-e3eb6407e353
+  server: 104.17.121.99
   port: 80
   network: ws
   udp: true
@@ -22,7 +78,7 @@ proxies:
 - name: v2rat.xqzy.workers.dev-CU1
   type: vless
   uuid: a65f9108-df2d-4cd7-ae0a-e3eb6407e353
-  server: 172.67.70.126
+  server: 162.159.143.72
   port: 80
   network: ws
   udp: true
@@ -36,7 +92,7 @@ proxies:
 - name: v2rat.xqzy.workers.dev-CU2
   type: vless
   uuid: a65f9108-df2d-4cd7-ae0a-e3eb6407e353
-  server: 162.159.141.47
+  server: 104.20.21.158
   port: 80
   network: ws
   udp: true
@@ -50,7 +106,7 @@ proxies:
 - name: v2rat.xqzy.workers.dev-CU3
   type: vless
   uuid: a65f9108-df2d-4cd7-ae0a-e3eb6407e353
-  server: 172.67.69.166
+  server: 172.67.75.254
   port: 80
   network: ws
   udp: true
@@ -64,7 +120,7 @@ proxies:
 - name: v2rat.xqzy.workers.dev-CU4
   type: vless
   uuid: a65f9108-df2d-4cd7-ae0a-e3eb6407e353
-  server: 104.26.8.28
+  server: 104.20.17.121
   port: 80
   network: ws
   udp: true
@@ -78,7 +134,7 @@ proxies:
 - name: v2rat.xqzy.workers.dev-CU5
   type: vless
   uuid: a65f9108-df2d-4cd7-ae0a-e3eb6407e353
-  server: 162.159.137.218
+  server: 104.26.10.116
   port: 80
   network: ws
   udp: true
@@ -92,7 +148,7 @@ proxies:
 - name: v2rat.xqzy.workers.dev-CT1
   type: vless
   uuid: a65f9108-df2d-4cd7-ae0a-e3eb6407e353
-  server: 172.64.87.31
+  server: 104.18.246.187
   port: 80
   network: ws
   udp: true
@@ -106,7 +162,7 @@ proxies:
 - name: v2rat.xqzy.workers.dev-CT2
   type: vless
   uuid: a65f9108-df2d-4cd7-ae0a-e3eb6407e353
-  server: 104.18.166.108
+  server: 104.18.104.101
   port: 80
   network: ws
   udp: true
@@ -120,7 +176,7 @@ proxies:
 - name: v2rat.xqzy.workers.dev-CT3
   type: vless
   uuid: a65f9108-df2d-4cd7-ae0a-e3eb6407e353
-  server: 104.17.175.251
+  server: 104.18.250.202
   port: 80
   network: ws
   udp: true
@@ -134,7 +190,7 @@ proxies:
 - name: v2rat.xqzy.workers.dev-CT4
   type: vless
   uuid: a65f9108-df2d-4cd7-ae0a-e3eb6407e353
-  server: 104.19.110.180
+  server: 104.16.166.140
   port: 80
   network: ws
   udp: true
@@ -148,7 +204,7 @@ proxies:
 - name: v2rat.xqzy.workers.dev-CT5
   type: vless
   uuid: a65f9108-df2d-4cd7-ae0a-e3eb6407e353
-  server: 104.17.151.154
+  server: 103.21.244.67
   port: 80
   network: ws
   udp: true
@@ -166,6 +222,10 @@ proxy-groups:
   - ♻️ 自动选择
   - DIRECT
   - v2rat.xqzy.workers.dev-CM1
+  - v2rat.xqzy.workers.dev-CM2
+  - v2rat.xqzy.workers.dev-CM3
+  - v2rat.xqzy.workers.dev-CM4
+  - v2rat.xqzy.workers.dev-CM5
   - v2rat.xqzy.workers.dev-CU1
   - v2rat.xqzy.workers.dev-CU2
   - v2rat.xqzy.workers.dev-CU3
@@ -183,6 +243,10 @@ proxy-groups:
   tolerance: 50
   proxies:
   - v2rat.xqzy.workers.dev-CM1
+  - v2rat.xqzy.workers.dev-CM2
+  - v2rat.xqzy.workers.dev-CM3
+  - v2rat.xqzy.workers.dev-CM4
+  - v2rat.xqzy.workers.dev-CM5
   - v2rat.xqzy.workers.dev-CU1
   - v2rat.xqzy.workers.dev-CU2
   - v2rat.xqzy.workers.dev-CU3
@@ -200,6 +264,10 @@ proxy-groups:
   - ♻️ 自动选择
   - 🎯 全球直连
   - v2rat.xqzy.workers.dev-CM1
+  - v2rat.xqzy.workers.dev-CM2
+  - v2rat.xqzy.workers.dev-CM3
+  - v2rat.xqzy.workers.dev-CM4
+  - v2rat.xqzy.workers.dev-CM5
   - v2rat.xqzy.workers.dev-CU1
   - v2rat.xqzy.workers.dev-CU2
   - v2rat.xqzy.workers.dev-CU3
@@ -216,6 +284,10 @@ proxy-groups:
   - 🚀 节点选择
   - 🎯 全球直连
   - v2rat.xqzy.workers.dev-CM1
+  - v2rat.xqzy.workers.dev-CM2
+  - v2rat.xqzy.workers.dev-CM3
+  - v2rat.xqzy.workers.dev-CM4
+  - v2rat.xqzy.workers.dev-CM5
   - v2rat.xqzy.workers.dev-CU1
   - v2rat.xqzy.workers.dev-CU2
   - v2rat.xqzy.workers.dev-CU3
@@ -232,6 +304,10 @@ proxy-groups:
   - 🎯 全球直连
   - 🚀 节点选择
   - v2rat.xqzy.workers.dev-CM1
+  - v2rat.xqzy.workers.dev-CM2
+  - v2rat.xqzy.workers.dev-CM3
+  - v2rat.xqzy.workers.dev-CM4
+  - v2rat.xqzy.workers.dev-CM5
   - v2rat.xqzy.workers.dev-CU1
   - v2rat.xqzy.workers.dev-CU2
   - v2rat.xqzy.workers.dev-CU3
@@ -248,6 +324,10 @@ proxy-groups:
   - 🚀 节点选择
   - 🎯 全球直连
   - v2rat.xqzy.workers.dev-CM1
+  - v2rat.xqzy.workers.dev-CM2
+  - v2rat.xqzy.workers.dev-CM3
+  - v2rat.xqzy.workers.dev-CM4
+  - v2rat.xqzy.workers.dev-CM5
   - v2rat.xqzy.workers.dev-CU1
   - v2rat.xqzy.workers.dev-CU2
   - v2rat.xqzy.workers.dev-CU3
@@ -265,6 +345,10 @@ proxy-groups:
   - 🎯 全球直连
   - ♻️ 自动选择
   - v2rat.xqzy.workers.dev-CM1
+  - v2rat.xqzy.workers.dev-CM2
+  - v2rat.xqzy.workers.dev-CM3
+  - v2rat.xqzy.workers.dev-CM4
+  - v2rat.xqzy.workers.dev-CM5
   - v2rat.xqzy.workers.dev-CU1
   - v2rat.xqzy.workers.dev-CU2
   - v2rat.xqzy.workers.dev-CU3
@@ -298,6 +382,10 @@ proxy-groups:
   - 🎯 全球直连
   - ♻️ 自动选择
   - v2rat.xqzy.workers.dev-CM1
+  - v2rat.xqzy.workers.dev-CM2
+  - v2rat.xqzy.workers.dev-CM3
+  - v2rat.xqzy.workers.dev-CM4
+  - v2rat.xqzy.workers.dev-CM5
   - v2rat.xqzy.workers.dev-CU1
   - v2rat.xqzy.workers.dev-CU2
   - v2rat.xqzy.workers.dev-CU3
