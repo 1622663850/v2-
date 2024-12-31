@@ -8,7 +8,7 @@ proxies:
 - name: v2rat.xqzy.workers.dev-CM1
   type: vless
   uuid: a65f9108-df2d-4cd7-ae0a-e3eb6407e353
-  server: 172.67.13.92
+  server: 104.21.19.122
   port: 80
   network: ws
   udp: true
@@ -22,7 +22,7 @@ proxies:
 - name: v2rat.xqzy.workers.dev-CM2
   type: vless
   uuid: a65f9108-df2d-4cd7-ae0a-e3eb6407e353
-  server: 172.67.69.10
+  server: 172.67.11.211
   port: 80
   network: ws
   udp: true
@@ -36,7 +36,7 @@ proxies:
 - name: v2rat.xqzy.workers.dev-CM3
   type: vless
   uuid: a65f9108-df2d-4cd7-ae0a-e3eb6407e353
-  server: 172.67.73.167
+  server: 172.67.76.1
   port: 80
   network: ws
   udp: true
@@ -50,7 +50,7 @@ proxies:
 - name: v2rat.xqzy.workers.dev-CM4
   type: vless
   uuid: a65f9108-df2d-4cd7-ae0a-e3eb6407e353
-  server: 172.67.6.184
+  server: 172.67.65.239
   port: 80
   network: ws
   udp: true
@@ -64,7 +64,7 @@ proxies:
 - name: v2rat.xqzy.workers.dev-CM5
   type: vless
   uuid: a65f9108-df2d-4cd7-ae0a-e3eb6407e353
-  server: 172.67.11.9
+  server: 172.67.9.10
   port: 80
   network: ws
   udp: true
@@ -78,7 +78,7 @@ proxies:
 - name: v2rat.xqzy.workers.dev-CU1
   type: vless
   uuid: a65f9108-df2d-4cd7-ae0a-e3eb6407e353
-  server: 104.20.27.226
+  server: 162.159.136.216
   port: 80
   network: ws
   udp: true
@@ -92,7 +92,7 @@ proxies:
 - name: v2rat.xqzy.workers.dev-CU2
   type: vless
   uuid: a65f9108-df2d-4cd7-ae0a-e3eb6407e353
-  server: 162.159.141.106
+  server: 104.20.19.232
   port: 80
   network: ws
   udp: true
@@ -106,7 +106,7 @@ proxies:
 - name: v2rat.xqzy.workers.dev-CU3
   type: vless
   uuid: a65f9108-df2d-4cd7-ae0a-e3eb6407e353
-  server: 172.67.68.29
+  server: 104.20.27.106
   port: 80
   network: ws
   udp: true
@@ -120,7 +120,7 @@ proxies:
 - name: v2rat.xqzy.workers.dev-CU4
   type: vless
   uuid: a65f9108-df2d-4cd7-ae0a-e3eb6407e353
-  server: 104.26.13.240
+  server: 104.26.13.194
   port: 80
   network: ws
   udp: true
@@ -134,7 +134,7 @@ proxies:
 - name: v2rat.xqzy.workers.dev-CU5
   type: vless
   uuid: a65f9108-df2d-4cd7-ae0a-e3eb6407e353
-  server: 162.159.143.229
+  server: 104.26.2.96
   port: 80
   network: ws
   udp: true
@@ -148,7 +148,7 @@ proxies:
 - name: v2rat.xqzy.workers.dev-CT1
   type: vless
   uuid: a65f9108-df2d-4cd7-ae0a-e3eb6407e353
-  server: 104.17.2.107
+  server: 104.19.86.141
   port: 80
   network: ws
   udp: true
@@ -162,7 +162,7 @@ proxies:
 - name: v2rat.xqzy.workers.dev-CT2
   type: vless
   uuid: a65f9108-df2d-4cd7-ae0a-e3eb6407e353
-  server: 104.17.164.186
+  server: 104.17.94.81
   port: 80
   network: ws
   udp: true
@@ -176,7 +176,7 @@ proxies:
 - name: v2rat.xqzy.workers.dev-CT3
   type: vless
   uuid: a65f9108-df2d-4cd7-ae0a-e3eb6407e353
-  server: 104.17.211.214
+  server: 104.18.209.70
   port: 80
   network: ws
   udp: true
@@ -190,7 +190,7 @@ proxies:
 - name: v2rat.xqzy.workers.dev-CT4
   type: vless
   uuid: a65f9108-df2d-4cd7-ae0a-e3eb6407e353
-  server: 104.16.239.64
+  server: 104.17.2.134
   port: 80
   network: ws
   udp: true
@@ -204,7 +204,7 @@ proxies:
 - name: v2rat.xqzy.workers.dev-CT5
   type: vless
   uuid: a65f9108-df2d-4cd7-ae0a-e3eb6407e353
-  server: 104.16.140.204
+  server: 104.18.185.237
   port: 80
   network: ws
   udp: true
