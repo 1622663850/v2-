@@ -48,9 +48,9 @@ if __name__ == '__main__':
     new_vmess = []
 
     vless = {
-        'name': 'v2rat.xqzy.workers.dev',
+        'name': 'vs3.xqzyh.workers.dev',
         'type': 'vless',
-        'uuid': 'a65f9108-df2d-4cd7-ae0a-e3eb6407e353',
+        'uuid': '99a7d136-f924-46f6-bdfe-1fd54a3d023b',
         'server': '172.67.74.99',
         'port': 80,
         'network': 'ws',
@@ -59,9 +59,9 @@ if __name__ == '__main__':
         'tfo': False,
         'tls': False,
         "ws-opts":{
-            "path": "/?ed=2048",
+            "path": "/?ed=2560",
             'headers':{
-                'Host': 'v2rat.xqzy.workers.dev'
+                'Host': 'vs3.xqzyh.workers.dev'
             }
         }
     }
@@ -82,7 +82,7 @@ if __name__ == '__main__':
     # encoded_content = base64.b64encode(json_bytes)
     # base64_str = encoded_content.decode('utf-8')
     # new_vmess.append("vmess://" + base64_str)
-    new_vmess.append("vless://a65f9108-df2d-4cd7-ae0a-e3eb6407e353@172.67.74.99:80?encryption=none&security=none&sni=v2rat.xqzy.workers.dev&fp=randomized&type=ws&host=v2rat.xqzy.workers.dev&path=%2F%3Fed%3D2048#v2rat.xqzy.workers.dev")
+    new_vmess.append("vless://99a7d136-f924-46f6-bdfe-1fd54a3d023b@172.67.74.99:80?encryption=none&security=none&sni=vs3.xqzyh.workers.dev&fp=randomized&type=ws&host=vs3.xqzyh.workers.dev&path=%2F%3Fed%3D2560#vs3.xqzyh.workers.dev")
 
     if response.status_code == 200:
         data = response.json()
@@ -103,9 +103,9 @@ if __name__ == '__main__':
                 # encoded_content = base64.b64encode(json_bytes)
                 # base64_str = encoded_content.decode('utf-8')
                 # new_vmess.append("vmess://"+base64_str)
-                new_vmess.append(f"vless://a65f9108-df2d-4cd7-ae0a-e3eb6407e353@{ip_['ip']}:80?encryption=none&security=none&sni=v2rat.xqzy.workers.dev&fp=randomized&type=ws&host=v2rat.xqzy.workers.dev&path=%2F%3Fed%3D2048#v2rat.xqzy.workers.dev-CM{str(jishu)}")
+                new_vmess.append(f"vless://99a7d136-f924-46f6-bdfe-1fd54a3d023b@{ip_['ip']}:80?encryption=none&security=none&sni=vs3.xqzyh.workers.dev&fp=randomized&type=ws&host=vs3.xqzyh.workers.dev&path=%2F%3Fed%3D2560#vs3.xqzyh.workers.dev-CM{str(jishu)}")
 
-                vless['name'] = f'v2rat.xqzy.workers.dev-CM{str(jishu)}' # 名称
+                vless['name'] = f'vs3.xqzyh.workers.dev-CM{str(jishu)}' # 名称
                 vless['server'] = ip_['ip']
                 clash_config['proxies'].append(vless.copy())
                 proxy_name_list.append(vless['name'])
@@ -126,8 +126,8 @@ if __name__ == '__main__':
                 # base64_str = encoded_content.decode('utf-8')
                 # new_vmess.append("vmess://" + base64_str)
                 new_vmess.append(
-                    f"vless://a65f9108-df2d-4cd7-ae0a-e3eb6407e353@{ip_['ip']}:80?encryption=none&security=none&sni=v2rat.xqzy.workers.dev&fp=randomized&type=ws&host=v2rat.xqzy.workers.dev&path=%2F%3Fed%3D2048#v2rat.xqzy.workers.dev-CU{str(jishu)}")
-                vless['name'] = f'v2rat.xqzy.workers.dev-CU{str(jishu)}' # 名称
+                    f"vless://99a7d136-f924-46f6-bdfe-1fd54a3d023b@{ip_['ip']}:80?encryption=none&security=none&sni=vs3.xqzyh.workers.dev&fp=randomized&type=ws&host=vs3.xqzyh.workers.dev&path=%2F%3Fed%3D2560#vs3.xqzyh.workers.dev-CU{str(jishu)}")
+                vless['name'] = f'vs3.xqzyh.workers.dev-CU{str(jishu)}' # 名称
                 vless['server'] = ip_['ip']
                 clash_config['proxies'].append(vless.copy())
                 proxy_name_list.append(vless['name'])
@@ -149,10 +149,10 @@ if __name__ == '__main__':
                 # base64_str = encoded_content.decode('utf-8')
                 # new_vmess.append("vmess://" + base64_str)
                 new_vmess.append(
-                    f"vless://a65f9108-df2d-4cd7-ae0a-e3eb6407e353@{ip_['ip']}:80?encryption=none&security=none&sni=v2rat.xqzy.workers.dev&fp=randomized&type=ws&host=v2rat.xqzy.workers.dev&path=%2F%3Fed%3D2048#v2rat.xqzy.workers.dev-CT{str(jishu)}")
+                    f"vless://99a7d136-f924-46f6-bdfe-1fd54a3d023b@{ip_['ip']}:80?encryption=none&security=none&sni=vs3.xqzyh.workers.dev&fp=randomized&type=ws&host=vs3.xqzyh.workers.dev&path=%2F%3Fed%3D2560#vs3.xqzyh.workers.dev-CT{str(jishu)}")
 
 
-                vless['name'] = f'v2rat.xqzy.workers.dev-CT{str(jishu)}' # 名称
+                vless['name'] = f'vs3.xqzyh.workers.dev-CT{str(jishu)}' # 名称
                 vless['server'] = ip_['ip']
                 clash_config['proxies'].append(vless.copy())
                 proxy_name_list.append(vless['name'])
