@@ -8,7 +8,7 @@ proxies:
 - name: vs3.xqzyh.workers.dev-CM1
   type: vless
   uuid: 99a7d136-f924-46f6-bdfe-1fd54a3d023b
-  server: 172.67.167.150
+  server: 172.67.164.35
   port: 80
   network: ws
   udp: true
@@ -22,7 +22,7 @@ proxies:
 - name: vs3.xqzyh.workers.dev-CM2
   type: vless
   uuid: 99a7d136-f924-46f6-bdfe-1fd54a3d023b
-  server: 104.21.228.125
+  server: 172.67.148.154
   port: 80
   network: ws
   udp: true
@@ -36,7 +36,7 @@ proxies:
 - name: vs3.xqzyh.workers.dev-CM3
   type: vless
   uuid: 99a7d136-f924-46f6-bdfe-1fd54a3d023b
-  server: 104.21.238.150
+  server: 172.67.157.143
   port: 80
   network: ws
   udp: true
@@ -50,7 +50,7 @@ proxies:
 - name: vs3.xqzyh.workers.dev-CM4
   type: vless
   uuid: 99a7d136-f924-46f6-bdfe-1fd54a3d023b
-  server: 172.67.68.201
+  server: 172.67.175.230
   port: 80
   network: ws
   udp: true
@@ -64,7 +64,7 @@ proxies:
 - name: vs3.xqzyh.workers.dev-CM5
   type: vless
   uuid: 99a7d136-f924-46f6-bdfe-1fd54a3d023b
-  server: 172.67.219.217
+  server: 172.67.145.22
   port: 80
   network: ws
   udp: true
@@ -78,7 +78,7 @@ proxies:
 - name: vs3.xqzyh.workers.dev-CU1
   type: vless
   uuid: 99a7d136-f924-46f6-bdfe-1fd54a3d023b
-  server: 104.21.236.83
+  server: 172.67.32.153
   port: 80
   network: ws
   udp: true
@@ -92,7 +92,7 @@ proxies:
 - name: vs3.xqzyh.workers.dev-CU2
   type: vless
   uuid: 99a7d136-f924-46f6-bdfe-1fd54a3d023b
-  server: 104.21.238.150
+  server: 172.67.9.111
   port: 80
   network: ws
   udp: true
@@ -106,7 +106,7 @@ proxies:
 - name: vs3.xqzyh.workers.dev-CU3
   type: vless
   uuid: 99a7d136-f924-46f6-bdfe-1fd54a3d023b
-  server: 104.21.226.39
+  server: 172.67.17.6
   port: 80
   network: ws
   udp: true
@@ -120,7 +120,7 @@ proxies:
 - name: vs3.xqzyh.workers.dev-CU4
   type: vless
   uuid: 99a7d136-f924-46f6-bdfe-1fd54a3d023b
-  server: 104.21.237.135
+  server: 172.67.24.21
   port: 80
   network: ws
   udp: true
@@ -134,7 +134,7 @@ proxies:
 - name: vs3.xqzyh.workers.dev-CU5
   type: vless
   uuid: 99a7d136-f924-46f6-bdfe-1fd54a3d023b
-  server: 104.21.225.88
+  server: 172.67.45.75
   port: 80
   network: ws
   udp: true
@@ -148,7 +148,7 @@ proxies:
 - name: vs3.xqzyh.workers.dev-CT1
   type: vless
   uuid: 99a7d136-f924-46f6-bdfe-1fd54a3d023b
-  server: 172.67.152.160
+  server: 172.67.217.89
   port: 80
   network: ws
   udp: true
@@ -162,7 +162,7 @@ proxies:
 - name: vs3.xqzyh.workers.dev-CT2
   type: vless
   uuid: 99a7d136-f924-46f6-bdfe-1fd54a3d023b
-  server: 104.21.227.92
+  server: 104.21.8.112
   port: 80
   network: ws
   udp: true
@@ -176,35 +176,7 @@ proxies:
 - name: vs3.xqzyh.workers.dev-CT3
   type: vless
   uuid: 99a7d136-f924-46f6-bdfe-1fd54a3d023b
-  server: 104.21.225.45
-  port: 80
-  network: ws
-  udp: true
-  skip-cert-verify: true
-  tfo: false
-  tls: false
-  ws-opts:
-    path: /?ed=2560
-    headers:
-      Host: vs3.xqzyh.workers.dev
-- name: vs3.xqzyh.workers.dev-CT4
-  type: vless
-  uuid: 99a7d136-f924-46f6-bdfe-1fd54a3d023b
-  server: 104.21.237.135
-  port: 80
-  network: ws
-  udp: true
-  skip-cert-verify: true
-  tfo: false
-  tls: false
-  ws-opts:
-    path: /?ed=2560
-    headers:
-      Host: vs3.xqzyh.workers.dev
-- name: vs3.xqzyh.workers.dev-CT5
-  type: vless
-  uuid: 99a7d136-f924-46f6-bdfe-1fd54a3d023b
-  server: 172.67.145.173
+  server: 104.21.10.206
   port: 80
   network: ws
   udp: true
@@ -234,8 +206,6 @@ proxy-groups:
   - vs3.xqzyh.workers.dev-CT1
   - vs3.xqzyh.workers.dev-CT2
   - vs3.xqzyh.workers.dev-CT3
-  - vs3.xqzyh.workers.dev-CT4
-  - vs3.xqzyh.workers.dev-CT5
 - name: ♻️ 自动选择
   type: url-test
   url: http://www.gstatic.com/generate_204
@@ -255,8 +225,6 @@ proxy-groups:
   - vs3.xqzyh.workers.dev-CT1
   - vs3.xqzyh.workers.dev-CT2
   - vs3.xqzyh.workers.dev-CT3
-  - vs3.xqzyh.workers.dev-CT4
-  - vs3.xqzyh.workers.dev-CT5
 - name: 🌍 国外媒体
   type: select
   proxies:
@@ -276,8 +244,6 @@ proxy-groups:
   - vs3.xqzyh.workers.dev-CT1
   - vs3.xqzyh.workers.dev-CT2
   - vs3.xqzyh.workers.dev-CT3
-  - vs3.xqzyh.workers.dev-CT4
-  - vs3.xqzyh.workers.dev-CT5
 - name: 📲 电报信息
   type: select
   proxies:
@@ -296,8 +262,6 @@ proxy-groups:
   - vs3.xqzyh.workers.dev-CT1
   - vs3.xqzyh.workers.dev-CT2
   - vs3.xqzyh.workers.dev-CT3
-  - vs3.xqzyh.workers.dev-CT4
-  - vs3.xqzyh.workers.dev-CT5
 - name: Ⓜ️ 微软服务
   type: select
   proxies:
@@ -316,8 +280,6 @@ proxy-groups:
   - vs3.xqzyh.workers.dev-CT1
   - vs3.xqzyh.workers.dev-CT2
   - vs3.xqzyh.workers.dev-CT3
-  - vs3.xqzyh.workers.dev-CT4
-  - vs3.xqzyh.workers.dev-CT5
 - name: 🍎 苹果服务
   type: select
   proxies:
@@ -336,8 +298,6 @@ proxy-groups:
   - vs3.xqzyh.workers.dev-CT1
   - vs3.xqzyh.workers.dev-CT2
   - vs3.xqzyh.workers.dev-CT3
-  - vs3.xqzyh.workers.dev-CT4
-  - vs3.xqzyh.workers.dev-CT5
 - name: 📢 谷歌FCM
   type: select
   proxies:
@@ -357,8 +317,6 @@ proxy-groups:
   - vs3.xqzyh.workers.dev-CT1
   - vs3.xqzyh.workers.dev-CT2
   - vs3.xqzyh.workers.dev-CT3
-  - vs3.xqzyh.workers.dev-CT4
-  - vs3.xqzyh.workers.dev-CT5
 - name: 🎯 全球直连
   type: select
   proxies:
@@ -394,8 +352,6 @@ proxy-groups:
   - vs3.xqzyh.workers.dev-CT1
   - vs3.xqzyh.workers.dev-CT2
   - vs3.xqzyh.workers.dev-CT3
-  - vs3.xqzyh.workers.dev-CT4
-  - vs3.xqzyh.workers.dev-CT5
 rules:
 - DOMAIN-SUFFIX,acl4.ssr,🎯 全球直连
 - DOMAIN-SUFFIX,ip6-localhost,🎯 全球直连
