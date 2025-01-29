@@ -8,7 +8,7 @@ proxies:
 - name: vs3.xqzyh.workers.dev-CM1
   type: vless
   uuid: 99a7d136-f924-46f6-bdfe-1fd54a3d023b
-  server: 104.21.229.215
+  server: 172.67.8.75
   port: 80
   network: ws
   udp: true
@@ -22,7 +22,7 @@ proxies:
 - name: vs3.xqzyh.workers.dev-CM2
   type: vless
   uuid: 99a7d136-f924-46f6-bdfe-1fd54a3d023b
-  server: 172.67.170.151
+  server: 104.21.91.53
   port: 80
   network: ws
   udp: true
@@ -36,7 +36,7 @@ proxies:
 - name: vs3.xqzyh.workers.dev-CM3
   type: vless
   uuid: 99a7d136-f924-46f6-bdfe-1fd54a3d023b
-  server: 172.67.175.148
+  server: 172.67.210.251
   port: 80
   network: ws
   udp: true
@@ -50,7 +50,7 @@ proxies:
 - name: vs3.xqzyh.workers.dev-CM4
   type: vless
   uuid: 99a7d136-f924-46f6-bdfe-1fd54a3d023b
-  server: 172.67.164.129
+  server: 104.21.36.100
   port: 80
   network: ws
   udp: true
@@ -64,7 +64,7 @@ proxies:
 - name: vs3.xqzyh.workers.dev-CM5
   type: vless
   uuid: 99a7d136-f924-46f6-bdfe-1fd54a3d023b
-  server: 104.21.16.110
+  server: 172.67.211.32
   port: 80
   network: ws
   udp: true
@@ -78,7 +78,7 @@ proxies:
 - name: vs3.xqzyh.workers.dev-CU1
   type: vless
   uuid: 99a7d136-f924-46f6-bdfe-1fd54a3d023b
-  server: 172.67.63.118
+  server: 172.67.22.235
   port: 80
   network: ws
   udp: true
@@ -92,7 +92,7 @@ proxies:
 - name: vs3.xqzyh.workers.dev-CU2
   type: vless
   uuid: 99a7d136-f924-46f6-bdfe-1fd54a3d023b
-  server: 172.67.59.46
+  server: 172.67.24.18
   port: 80
   network: ws
   udp: true
@@ -106,7 +106,7 @@ proxies:
 - name: vs3.xqzyh.workers.dev-CU3
   type: vless
   uuid: 99a7d136-f924-46f6-bdfe-1fd54a3d023b
-  server: 104.21.225.71
+  server: 172.67.115.27
   port: 80
   network: ws
   udp: true
@@ -120,7 +120,7 @@ proxies:
 - name: vs3.xqzyh.workers.dev-CU4
   type: vless
   uuid: 99a7d136-f924-46f6-bdfe-1fd54a3d023b
-  server: 172.67.115.121
+  server: 172.67.23.103
   port: 80
   network: ws
   udp: true
@@ -134,7 +134,7 @@ proxies:
 - name: vs3.xqzyh.workers.dev-CU5
   type: vless
   uuid: 99a7d136-f924-46f6-bdfe-1fd54a3d023b
-  server: 172.67.62.139
+  server: 172.67.54.43
   port: 80
   network: ws
   udp: true
@@ -148,7 +148,7 @@ proxies:
 - name: vs3.xqzyh.workers.dev-CT1
   type: vless
   uuid: 99a7d136-f924-46f6-bdfe-1fd54a3d023b
-  server: 172.67.20.113
+  server: 172.67.36.154
   port: 80
   network: ws
   udp: true
@@ -162,7 +162,7 @@ proxies:
 - name: vs3.xqzyh.workers.dev-CT2
   type: vless
   uuid: 99a7d136-f924-46f6-bdfe-1fd54a3d023b
-  server: 172.67.38.185
+  server: 172.67.20.78
   port: 80
   network: ws
   udp: true
@@ -176,7 +176,7 @@ proxies:
 - name: vs3.xqzyh.workers.dev-CT3
   type: vless
   uuid: 99a7d136-f924-46f6-bdfe-1fd54a3d023b
-  server: 172.67.44.59
+  server: 172.67.27.8
   port: 80
   network: ws
   udp: true
@@ -190,7 +190,7 @@ proxies:
 - name: vs3.xqzyh.workers.dev-CT4
   type: vless
   uuid: 99a7d136-f924-46f6-bdfe-1fd54a3d023b
-  server: 172.67.22.132
+  server: 172.67.31.172
   port: 80
   network: ws
   udp: true
@@ -204,7 +204,7 @@ proxies:
 - name: vs3.xqzyh.workers.dev-CT5
   type: vless
   uuid: 99a7d136-f924-46f6-bdfe-1fd54a3d023b
-  server: 172.67.34.38
+  server: 172.67.18.207
   port: 80
   network: ws
   udp: true
