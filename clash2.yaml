@@ -4,46 +4,361 @@ allow-lan: true
 mode: Rule
 log-level: info
 external-controller: :9090
-proxies: []
+proxies:
+- name: vs3.xqzyh.workers.dev-CM1
+  type: vless
+  uuid: 99a7d136-f924-46f6-bdfe-1fd54a3d023b
+  server: 172.67.148.186
+  port: 80
+  network: ws
+  udp: true
+  skip-cert-verify: true
+  tfo: false
+  tls: false
+  ws-opts:
+    path: /?ed=2560
+    headers:
+      Host: vs3.xqzyh.workers.dev
+- name: vs3.xqzyh.workers.dev-CM2
+  type: vless
+  uuid: 99a7d136-f924-46f6-bdfe-1fd54a3d023b
+  server: 172.67.175.84
+  port: 80
+  network: ws
+  udp: true
+  skip-cert-verify: true
+  tfo: false
+  tls: false
+  ws-opts:
+    path: /?ed=2560
+    headers:
+      Host: vs3.xqzyh.workers.dev
+- name: vs3.xqzyh.workers.dev-CM3
+  type: vless
+  uuid: 99a7d136-f924-46f6-bdfe-1fd54a3d023b
+  server: 104.21.230.210
+  port: 80
+  network: ws
+  udp: true
+  skip-cert-verify: true
+  tfo: false
+  tls: false
+  ws-opts:
+    path: /?ed=2560
+    headers:
+      Host: vs3.xqzyh.workers.dev
+- name: vs3.xqzyh.workers.dev-CM4
+  type: vless
+  uuid: 99a7d136-f924-46f6-bdfe-1fd54a3d023b
+  server: 172.67.173.74
+  port: 80
+  network: ws
+  udp: true
+  skip-cert-verify: true
+  tfo: false
+  tls: false
+  ws-opts:
+    path: /?ed=2560
+    headers:
+      Host: vs3.xqzyh.workers.dev
+- name: vs3.xqzyh.workers.dev-CM5
+  type: vless
+  uuid: 99a7d136-f924-46f6-bdfe-1fd54a3d023b
+  server: 104.21.233.184
+  port: 80
+  network: ws
+  udp: true
+  skip-cert-verify: true
+  tfo: false
+  tls: false
+  ws-opts:
+    path: /?ed=2560
+    headers:
+      Host: vs3.xqzyh.workers.dev
+- name: vs3.xqzyh.workers.dev-CU1
+  type: vless
+  uuid: 99a7d136-f924-46f6-bdfe-1fd54a3d023b
+  server: 172.67.13.78
+  port: 80
+  network: ws
+  udp: true
+  skip-cert-verify: true
+  tfo: false
+  tls: false
+  ws-opts:
+    path: /?ed=2560
+    headers:
+      Host: vs3.xqzyh.workers.dev
+- name: vs3.xqzyh.workers.dev-CU2
+  type: vless
+  uuid: 99a7d136-f924-46f6-bdfe-1fd54a3d023b
+  server: 104.21.238.90
+  port: 80
+  network: ws
+  udp: true
+  skip-cert-verify: true
+  tfo: false
+  tls: false
+  ws-opts:
+    path: /?ed=2560
+    headers:
+      Host: vs3.xqzyh.workers.dev
+- name: vs3.xqzyh.workers.dev-CU3
+  type: vless
+  uuid: 99a7d136-f924-46f6-bdfe-1fd54a3d023b
+  server: 104.21.225.41
+  port: 80
+  network: ws
+  udp: true
+  skip-cert-verify: true
+  tfo: false
+  tls: false
+  ws-opts:
+    path: /?ed=2560
+    headers:
+      Host: vs3.xqzyh.workers.dev
+- name: vs3.xqzyh.workers.dev-CU4
+  type: vless
+  uuid: 99a7d136-f924-46f6-bdfe-1fd54a3d023b
+  server: 104.21.233.84
+  port: 80
+  network: ws
+  udp: true
+  skip-cert-verify: true
+  tfo: false
+  tls: false
+  ws-opts:
+    path: /?ed=2560
+    headers:
+      Host: vs3.xqzyh.workers.dev
+- name: vs3.xqzyh.workers.dev-CU5
+  type: vless
+  uuid: 99a7d136-f924-46f6-bdfe-1fd54a3d023b
+  server: 104.21.224.85
+  port: 80
+  network: ws
+  udp: true
+  skip-cert-verify: true
+  tfo: false
+  tls: false
+  ws-opts:
+    path: /?ed=2560
+    headers:
+      Host: vs3.xqzyh.workers.dev
+- name: vs3.xqzyh.workers.dev-CT1
+  type: vless
+  uuid: 99a7d136-f924-46f6-bdfe-1fd54a3d023b
+  server: 104.21.238.193
+  port: 80
+  network: ws
+  udp: true
+  skip-cert-verify: true
+  tfo: false
+  tls: false
+  ws-opts:
+    path: /?ed=2560
+    headers:
+      Host: vs3.xqzyh.workers.dev
+- name: vs3.xqzyh.workers.dev-CT2
+  type: vless
+  uuid: 99a7d136-f924-46f6-bdfe-1fd54a3d023b
+  server: 104.21.228.35
+  port: 80
+  network: ws
+  udp: true
+  skip-cert-verify: true
+  tfo: false
+  tls: false
+  ws-opts:
+    path: /?ed=2560
+    headers:
+      Host: vs3.xqzyh.workers.dev
+- name: vs3.xqzyh.workers.dev-CT3
+  type: vless
+  uuid: 99a7d136-f924-46f6-bdfe-1fd54a3d023b
+  server: 104.21.239.156
+  port: 80
+  network: ws
+  udp: true
+  skip-cert-verify: true
+  tfo: false
+  tls: false
+  ws-opts:
+    path: /?ed=2560
+    headers:
+      Host: vs3.xqzyh.workers.dev
+- name: vs3.xqzyh.workers.dev-CT4
+  type: vless
+  uuid: 99a7d136-f924-46f6-bdfe-1fd54a3d023b
+  server: 172.67.138.196
+  port: 80
+  network: ws
+  udp: true
+  skip-cert-verify: true
+  tfo: false
+  tls: false
+  ws-opts:
+    path: /?ed=2560
+    headers:
+      Host: vs3.xqzyh.workers.dev
+- name: vs3.xqzyh.workers.dev-CT5
+  type: vless
+  uuid: 99a7d136-f924-46f6-bdfe-1fd54a3d023b
+  server: 104.21.229.129
+  port: 80
+  network: ws
+  udp: true
+  skip-cert-verify: true
+  tfo: false
+  tls: false
+  ws-opts:
+    path: /?ed=2560
+    headers:
+      Host: vs3.xqzyh.workers.dev
 proxy-groups:
 - name: 🚀 节点选择
   type: select
   proxies:
   - ♻️ 自动选择
   - DIRECT
+  - vs3.xqzyh.workers.dev-CM1
+  - vs3.xqzyh.workers.dev-CM2
+  - vs3.xqzyh.workers.dev-CM3
+  - vs3.xqzyh.workers.dev-CM4
+  - vs3.xqzyh.workers.dev-CM5
+  - vs3.xqzyh.workers.dev-CU1
+  - vs3.xqzyh.workers.dev-CU2
+  - vs3.xqzyh.workers.dev-CU3
+  - vs3.xqzyh.workers.dev-CU4
+  - vs3.xqzyh.workers.dev-CU5
+  - vs3.xqzyh.workers.dev-CT1
+  - vs3.xqzyh.workers.dev-CT2
+  - vs3.xqzyh.workers.dev-CT3
+  - vs3.xqzyh.workers.dev-CT4
+  - vs3.xqzyh.workers.dev-CT5
 - name: ♻️ 自动选择
   type: url-test
   url: http://www.gstatic.com/generate_204
   interval: 300
   tolerance: 50
-  proxies: []
+  proxies:
+  - vs3.xqzyh.workers.dev-CM1
+  - vs3.xqzyh.workers.dev-CM2
+  - vs3.xqzyh.workers.dev-CM3
+  - vs3.xqzyh.workers.dev-CM4
+  - vs3.xqzyh.workers.dev-CM5
+  - vs3.xqzyh.workers.dev-CU1
+  - vs3.xqzyh.workers.dev-CU2
+  - vs3.xqzyh.workers.dev-CU3
+  - vs3.xqzyh.workers.dev-CU4
+  - vs3.xqzyh.workers.dev-CU5
+  - vs3.xqzyh.workers.dev-CT1
+  - vs3.xqzyh.workers.dev-CT2
+  - vs3.xqzyh.workers.dev-CT3
+  - vs3.xqzyh.workers.dev-CT4
+  - vs3.xqzyh.workers.dev-CT5
 - name: 🌍 国外媒体
   type: select
   proxies:
   - 🚀 节点选择
   - ♻️ 自动选择
   - 🎯 全球直连
+  - vs3.xqzyh.workers.dev-CM1
+  - vs3.xqzyh.workers.dev-CM2
+  - vs3.xqzyh.workers.dev-CM3
+  - vs3.xqzyh.workers.dev-CM4
+  - vs3.xqzyh.workers.dev-CM5
+  - vs3.xqzyh.workers.dev-CU1
+  - vs3.xqzyh.workers.dev-CU2
+  - vs3.xqzyh.workers.dev-CU3
+  - vs3.xqzyh.workers.dev-CU4
+  - vs3.xqzyh.workers.dev-CU5
+  - vs3.xqzyh.workers.dev-CT1
+  - vs3.xqzyh.workers.dev-CT2
+  - vs3.xqzyh.workers.dev-CT3
+  - vs3.xqzyh.workers.dev-CT4
+  - vs3.xqzyh.workers.dev-CT5
 - name: 📲 电报信息
   type: select
   proxies:
   - 🚀 节点选择
   - 🎯 全球直连
+  - vs3.xqzyh.workers.dev-CM1
+  - vs3.xqzyh.workers.dev-CM2
+  - vs3.xqzyh.workers.dev-CM3
+  - vs3.xqzyh.workers.dev-CM4
+  - vs3.xqzyh.workers.dev-CM5
+  - vs3.xqzyh.workers.dev-CU1
+  - vs3.xqzyh.workers.dev-CU2
+  - vs3.xqzyh.workers.dev-CU3
+  - vs3.xqzyh.workers.dev-CU4
+  - vs3.xqzyh.workers.dev-CU5
+  - vs3.xqzyh.workers.dev-CT1
+  - vs3.xqzyh.workers.dev-CT2
+  - vs3.xqzyh.workers.dev-CT3
+  - vs3.xqzyh.workers.dev-CT4
+  - vs3.xqzyh.workers.dev-CT5
 - name: Ⓜ️ 微软服务
   type: select
   proxies:
   - 🎯 全球直连
   - 🚀 节点选择
+  - vs3.xqzyh.workers.dev-CM1
+  - vs3.xqzyh.workers.dev-CM2
+  - vs3.xqzyh.workers.dev-CM3
+  - vs3.xqzyh.workers.dev-CM4
+  - vs3.xqzyh.workers.dev-CM5
+  - vs3.xqzyh.workers.dev-CU1
+  - vs3.xqzyh.workers.dev-CU2
+  - vs3.xqzyh.workers.dev-CU3
+  - vs3.xqzyh.workers.dev-CU4
+  - vs3.xqzyh.workers.dev-CU5
+  - vs3.xqzyh.workers.dev-CT1
+  - vs3.xqzyh.workers.dev-CT2
+  - vs3.xqzyh.workers.dev-CT3
+  - vs3.xqzyh.workers.dev-CT4
+  - vs3.xqzyh.workers.dev-CT5
 - name: 🍎 苹果服务
   type: select
   proxies:
   - 🚀 节点选择
   - 🎯 全球直连
+  - vs3.xqzyh.workers.dev-CM1
+  - vs3.xqzyh.workers.dev-CM2
+  - vs3.xqzyh.workers.dev-CM3
+  - vs3.xqzyh.workers.dev-CM4
+  - vs3.xqzyh.workers.dev-CM5
+  - vs3.xqzyh.workers.dev-CU1
+  - vs3.xqzyh.workers.dev-CU2
+  - vs3.xqzyh.workers.dev-CU3
+  - vs3.xqzyh.workers.dev-CU4
+  - vs3.xqzyh.workers.dev-CU5
+  - vs3.xqzyh.workers.dev-CT1
+  - vs3.xqzyh.workers.dev-CT2
+  - vs3.xqzyh.workers.dev-CT3
+  - vs3.xqzyh.workers.dev-CT4
+  - vs3.xqzyh.workers.dev-CT5
 - name: 📢 谷歌FCM
   type: select
   proxies:
   - 🚀 节点选择
   - 🎯 全球直连
   - ♻️ 自动选择
+  - vs3.xqzyh.workers.dev-CM1
+  - vs3.xqzyh.workers.dev-CM2
+  - vs3.xqzyh.workers.dev-CM3
+  - vs3.xqzyh.workers.dev-CM4
+  - vs3.xqzyh.workers.dev-CM5
+  - vs3.xqzyh.workers.dev-CU1
+  - vs3.xqzyh.workers.dev-CU2
+  - vs3.xqzyh.workers.dev-CU3
+  - vs3.xqzyh.workers.dev-CU4
+  - vs3.xqzyh.workers.dev-CU5
+  - vs3.xqzyh.workers.dev-CT1
+  - vs3.xqzyh.workers.dev-CT2
+  - vs3.xqzyh.workers.dev-CT3
+  - vs3.xqzyh.workers.dev-CT4
+  - vs3.xqzyh.workers.dev-CT5
 - name: 🎯 全球直连
   type: select
   proxies:
@@ -66,6 +381,21 @@ proxy-groups:
   - 🚀 节点选择
   - 🎯 全球直连
   - ♻️ 自动选择
+  - vs3.xqzyh.workers.dev-CM1
+  - vs3.xqzyh.workers.dev-CM2
+  - vs3.xqzyh.workers.dev-CM3
+  - vs3.xqzyh.workers.dev-CM4
+  - vs3.xqzyh.workers.dev-CM5
+  - vs3.xqzyh.workers.dev-CU1
+  - vs3.xqzyh.workers.dev-CU2
+  - vs3.xqzyh.workers.dev-CU3
+  - vs3.xqzyh.workers.dev-CU4
+  - vs3.xqzyh.workers.dev-CU5
+  - vs3.xqzyh.workers.dev-CT1
+  - vs3.xqzyh.workers.dev-CT2
+  - vs3.xqzyh.workers.dev-CT3
+  - vs3.xqzyh.workers.dev-CT4
+  - vs3.xqzyh.workers.dev-CT5
 rules:
 - DOMAIN-SUFFIX,acl4.ssr,🎯 全球直连
 - DOMAIN-SUFFIX,ip6-localhost,🎯 全球直连
